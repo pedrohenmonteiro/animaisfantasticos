@@ -129,6 +129,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.faq {
+  margin-bottom: 60px;
+}
+
 .faq-lista {
   grid-column: 2 / 4;
 }
@@ -297,4 +301,26 @@ body {
   opacity: 1;
 
   transform: translateX(0px);
+}
+
+[data-semana]::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #e54;
+  margin-left: 4px;
+}
+
+[data-semana].aberto::after {
+  background: #3f4;
+}
+
+.btc-preco {
+  background: #3f4;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 2px;
 }
